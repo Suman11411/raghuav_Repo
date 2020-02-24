@@ -1,0 +1,9 @@
+  sudo yum install -y java-1.8*
+  sudo /usr/sbin/alternatives --config java
+  java -version
+  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+  service jenkins start
+  sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+  yum install jenkins
+  service jenkins start
+  
