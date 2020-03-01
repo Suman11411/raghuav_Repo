@@ -13,8 +13,7 @@
       become: true
 
     - name: copy Tomcat
-      copy:
-	 src=./apache-tomcat-8.5.16.tar.gz dest=/opt/apache-tomcat-8.5.16.tar.gz
+      copy: src=./apache-tomcat-8.5.16.tar.gz dest=/opt/apache-tomcat-8.5.16.tar.gz
 
     - name: Extract Tomcat archive
       command: tar zxvf /opt/apache-tomcat-8.5.16.tar.gz -C /opt/ creates=/opt/apache-tomcat-8.5.16
